@@ -1,0 +1,20 @@
+@startuml
+class ProductLine {
+pln_textDescription : String
+pln_productLine : String
+}
+class Product {
+p_productDescription : String
+p_quantityInStock : Integer
+p_productCode : String
+p_productName : String
+p_productScale : String
+p_productVendor : String
+p_buyPrice : Real
+p_MSRP : Real
+}
+
+
+Product "1..*" -- "1" ProductLine
+
+@enduml
