@@ -4,6 +4,7 @@ It was complied for Windows OS.
 To run the tool use:
 - run path_to_class_diagram_1 path_to_class_diagram2 or
 - antr_usage path_to_class_diagram_1 path_to_class_diagram2
+
 Example: run diagrams/ontology.puml diagrams/T1a.puml
 
 It is assumed that the first diagram presents an ontology domain, and the second diagram - its representation (probably of bad quality).
