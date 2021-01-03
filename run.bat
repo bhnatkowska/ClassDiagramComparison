@@ -1,0 +1,1 @@
+java -jar antr_usage.jar %1 %2

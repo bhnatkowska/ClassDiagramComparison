@@ -1,0 +1,75 @@
+@startuml
+
+class Customer {
+c_phone : String
+c_addressLine1 : String
+c_customerNumber : Integer
+c_customerName : String
+c_creditLimit : Integer
+c_contactLastName : String
+c_contactFirstName : String
+c_city : String
+c_postalCode : Integer
+}
+
+class Employee {
+e_employeeNumber : Integer
+e_lastName : String
+e_email : String
+e_firstName : String
+e_extension : String
+}
+
+class Order {
+o_requiredDate : String
+o_orderDate : String
+o_shippedDate : String
+o_orderNumber : Integer
+od_quantityOrdered : Integer
+od_priceEach : String
+od_orderLineNumber : Integer
+}
+
+class Dummy4 {
+c_country : String
+pln_textDescription : String
+p_productScale : String
+o_status : String
+e_jobTitle : String
+p_productVendor : String
+off_territory : String
+p_MSRP : Real
+off_country : String
+p_productDescription : String
+e_reportsTo : Integer
+p_buyPrice : Real
+p_quantityInStock : Integer
+o_comments : String
+pln_productLine : String
+p_productName : String
+p_productCode : String
+c_addressLine2 : String
+}
+
+class Dummy5 {
+c_state : String
+off_state : String
+}
+
+class Office {
+off_addressLine1 : String
+off_phone : String
+off_city : String
+off_postalCode : String
+off_officeCode : Integer
+off_addressLine2 : String
+}
+
+Customer "1..*" -- "1" Employee
+Order "1..*" -- "1" Customer
+Order "1..*" -- "1" Dummy4
+Customer "1..*" -- "1" Dummy4
+Order "1..*" -- " 0..1" Dummy5
+Order "1..*" -- "1" Office
+
+@enduml
