@@ -11,6 +11,6 @@ It is assumed that the first diagram presents an ontology domain, and the second
 The tool calculates the consistency measures between diagrams at the level of classes and associations as well as the measure for all elements.
 The measures take values from 0 (lack of consistency) to 1 (full consistency).
 
-The samples directory consists raw data from which class diagram (T1a, T1b) were generated.
+The samples directory contains raw data from which class diagram (T1a, T1b) were generated.
 ClassicModels.xls is the orginal source of data from which other samples were generated.
 The names of samples correspond to the names of class diagrams the samples represent.
